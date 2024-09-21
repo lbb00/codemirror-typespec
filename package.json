@@ -1,0 +1,30 @@
+{
+  "name": "codemirror-typespec",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "pnpm run dev:client & pnpm run dev:server",
+    "dev:client": "vite",
+    "dev:server": "node server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@codemirror/language": "^6.10.3",
+    "@codemirror/state": "^6.4.1",
+    "@lezer/highlight": "^1.2.1",
+    "@typespec/compiler": "^0.60.1",
+    "codemirror": "^6.0.1",
+    "codemirror-languageserver": "^1.11.0",
+    "events": "^3.3.0",
+    "vscode-languageserver": "^9.0.1",
+    "vscode-ws-jsonrpc": "^3.3.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.7"
+  }
+}
